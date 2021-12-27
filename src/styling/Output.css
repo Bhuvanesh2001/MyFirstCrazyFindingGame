@@ -1,0 +1,12 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  align-items: center;
+  padding: 20px;
+  background-color: #1cad37;
+  border: none;
+}
+.bottom {
+  padding-top: 40px;
+}

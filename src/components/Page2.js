@@ -18,9 +18,9 @@ import Fruit9 from "../images/straberry.jpg";
 import { Link } from "react-router-dom";
 
 export default class Page2 extends Component {
-  componentDidMount=()=>{
+  componentDidMount = () => {
     console.log("props data", this.props.location.data);
-  }
+  };
   render() {
     return (
       <div>
@@ -28,10 +28,10 @@ export default class Page2 extends Component {
           {" "}
           <div className="heading">
             <div className="backbutton">
-              <button className="buttonup">
+              {/* <button className="buttonup">
                 {" "}
                 <MdArrowBack />
-              </button>
+              </button> */}
             </div>
 
             <center>
@@ -49,7 +49,7 @@ export default class Page2 extends Component {
               <img src={Fruit7} alt="apple"></img>
             </div>
             <div className="pho">
-              <img src={Fruit3} alt="apple"></img>
+              <img src={Fruit4} alt="apple"></img>
             </div>
           </div>
           <div className="photos">
@@ -57,7 +57,7 @@ export default class Page2 extends Component {
               <img src={Fruit1} alt="apple"></img>
             </div>
             <div className="pho">
-              <img src={Fruit4} alt="apple"></img>
+              <img src={Fruit3} alt="apple"></img>
             </div>
             <div className="pho">
               <img src={Fruit9} alt="apple"></img>
@@ -69,10 +69,10 @@ export default class Page2 extends Component {
           <nav>
             {" "}
             <div className="first">
-              <Link 
+              <Link
                 to={{
                   pathname: "./Page3",
-                  data: { count:this.props.location.data.count+20  },
+                  data: { count: this.props.location.data.count + 20 },
                 }}
               >
                 <button className="button1">
@@ -82,11 +82,11 @@ export default class Page2 extends Component {
               </Link>
             </div>
             <div className="second">
-              <Link 
-              to={{
-                pathname: "./Page3",
-                data: { count:this.props.location.data.count },
-              }}
+              <Link
+                to={{
+                  pathname: "./Page3",
+                  data: { count: this.props.location.data.count },
+                }}
               >
                 <button className="button2">
                   <FaTimes />

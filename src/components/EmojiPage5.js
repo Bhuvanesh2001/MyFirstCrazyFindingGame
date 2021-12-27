@@ -28,10 +28,10 @@ export default class EmojiPage5 extends Component {
           {" "}
           <div className="heading">
             <div className="backbutton">
-              <button className="buttonup">
+              {/* <button className="buttonup">
                 {" "}
                 <MdArrowBack />
-              </button>
+              </button> */}
             </div>
 
             <center>
@@ -46,7 +46,7 @@ export default class EmojiPage5 extends Component {
               <img src={Emoji9} alt="apple"></img>
             </div>
             <div className="pho">
-              <img src={Emoji7} alt="apple"></img>
+              <img src={Emoji2} alt="apple"></img>
             </div>
             <div className="pho">
               <img src={Emoji8} alt="apple"></img>

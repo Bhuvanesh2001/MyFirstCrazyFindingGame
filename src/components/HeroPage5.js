@@ -28,10 +28,10 @@ export default class HeroPage5 extends Component {
           {" "}
           <div className="heading">
             <div className="backbutton">
-              <button className="buttonup">
+              {/* <button className="buttonup">
                 {" "}
                 <MdArrowBack />
-              </button>
+              </button> */}
             </div>
 
             <center>
@@ -49,7 +49,7 @@ export default class HeroPage5 extends Component {
               <img src={Hero5} alt="apple"></img>
             </div>
             <div className="pho">
-              <img src={Hero2} alt="apple"></img>
+              <img src={Hero7} alt="apple"></img>
             </div>
           </div>
           <div className="photos">
@@ -60,7 +60,7 @@ export default class HeroPage5 extends Component {
               <img src={Hero4} alt="apple"></img>
             </div>
             <div className="pho">
-              <img src={Hero7} alt="apple"></img>
+              <img src={Hero2} alt="apple"></img>
             </div>
           </div>
         </div>
@@ -73,7 +73,8 @@ export default class HeroPage5 extends Component {
                 to={{
                   pathname: "./Output",
                   data: {
-                    count: this.props.location.data.count + 50,name: "hero"
+                    count: this.props.location.data.count + 50,
+                    name: "hero",
                   },
                 }}
               >

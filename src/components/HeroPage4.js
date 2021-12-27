@@ -29,10 +29,10 @@ export default class HeroPage4 extends Component {
           {" "}
           <div className="heading">
             <div className="backbutton">
-              <button className="buttonup">
+              {/* <button className="buttonup">
                 {" "}
                 <MdArrowBack />
-              </button>
+              </button> */}
             </div>
 
             <center>

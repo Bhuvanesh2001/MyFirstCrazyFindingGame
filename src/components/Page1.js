@@ -17,12 +17,11 @@ import Fruit9 from "../images/straberry.jpg";
 import { Link } from "react-router-dom";
 
 export default class Page1 extends Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props);
-    this.state={
-      countNumber:0
-    }
+    this.state = {
+      countNumber: 0,
+    };
   }
   render() {
     return (
@@ -31,10 +30,10 @@ export default class Page1 extends Component {
           {" "}
           <div className="heading">
             <div className="backbutton">
-              <button className="buttonup">
+              {/* <button className="buttonup">
                 {" "}
                 <MdArrowBack />
-              </button>
+              </button> */}
             </div>
 
             <center>
@@ -57,13 +56,13 @@ export default class Page1 extends Component {
           </div>
           <div className="photos">
             <div className="pho">
-              <img src={Fruit1} alt="apple"></img>
-            </div>
-            <div className="pho">
               <img src={Fruit7} alt="apple"></img>
             </div>
             <div className="pho">
               <img src={Fruit4} alt="apple"></img>
+            </div>
+            <div className="pho">
+              <img src={Fruit1} alt="apple"></img>
             </div>
           </div>
         </div>
@@ -72,31 +71,33 @@ export default class Page1 extends Component {
           <nav>
             {" "}
             <div className="first">
-              <Link 
-              to={{
-                pathname: "./Page2",
-                data: { count: 10 },
-              }}
+              <Link
+                to={{
+                  pathname: "./Page2",
+                  data: { count: 10 },
+                }}
               >
-                <button className="button1"
-                 onClick={()=>{
-                  this.state.countNumber= this.state.countNumber+10
-                  this.setState({countNumber:this.state.countNumber})
-                  console.log(this.state.countNumber,"sgg");
-                  }}>
+                <button
+                  className="button1"
+                  onClick={() => {
+                    this.state.countNumber = this.state.countNumber + 10;
+                    this.setState({ countNumber: this.state.countNumber });
+                    console.log(this.state.countNumber, "sgg");
+                  }}
+                >
                   {" "}
                   <FaCheck />
                 </button>
               </Link>
             </div>
             <div className="second">
-              <Link 
-              to={{
-                pathname: "./Page2",
-                data: { count: 0 },
-              }}
+              <Link
+                to={{
+                  pathname: "./Page2",
+                  data: { count: 0 },
+                }}
               >
-                <button className="button2" >
+                <button className="button2">
                   <FaTimes />
                 </button>
               </Link>

@@ -8,16 +8,17 @@ nav {
 }
 
 h2 {
-  color: #ef7125;
+  /* color: #ef7125; */
+  color: #473e3f;
   font-size: 30px;
 }
 
-.backbutton {
+/* .backbutton {
   height: 90px;
   width: 90px;
   float: left;
   padding-left: 100px;
-}
+} */
 .backbutton button{
  
   padding: 0;
@@ -45,7 +46,7 @@ background: none;
 
 .buttons {
   padding-top: 20px;
-  padding-left: 10vw;
+  padding-left: 7vw;
 }
 .button1{
    height: 8vh;
@@ -66,11 +67,11 @@ background: none;
 }
 .first,
 .second {
-  padding-right: 70px;
+  padding-right: 80px;
   display: inline;
 }
 
-/* .button2 {
+/* .button2 
   height: 8vh;
   width: 4vw;
   float: right;

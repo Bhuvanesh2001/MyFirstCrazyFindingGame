@@ -14,12 +14,13 @@ h {
   padding-bottom: 50px;
 }
 h2 {
-  color: #ef7125;
+  /* color: #ef7125; */
+  color: #473e3f;
   font-size: 30px;
 }
 
 .tphotos {
-  padding-left: 80px;
+  padding-left: 50px;
   display: inline-flex;
 }
 .tpho {

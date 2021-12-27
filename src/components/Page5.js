@@ -27,10 +27,10 @@ export default class Page5 extends Component {
           {" "}
           <div className="heading">
             <div className="backbutton">
-              <button className="buttonup">
+              {/* <button className="buttonup">
                 {" "}
                 <MdArrowBack />
-              </button>
+              </button> */}
             </div>
 
             <center>
@@ -53,10 +53,10 @@ export default class Page5 extends Component {
           </div>
           <div className="photos">
             <div className="pho">
-              <img src={Fruit6} alt="apple"></img>
+              <img src={Fruit4} alt="apple"></img>
             </div>
             <div className="pho">
-              <img src={Fruit4} alt="apple"></img>
+              <img src={Fruit6} alt="apple"></img>
             </div>
             <div className="pho">
               <img src={Fruit5} alt="apple"></img>

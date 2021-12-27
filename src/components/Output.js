@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "../styling/Title.css";
+import React, { Component, useState } from "react";
+import "../styling/Output.css";
 
 import { FaCheck } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
@@ -14,6 +14,7 @@ import Fruit6 from "../images/mango.jpg";
 import Fruit7 from "../images/papaya.jpg";
 import Fruit8 from "../images/pineapple.jpg";
 import Fruit9 from "../images/straberry.jpg";
+import Invalid from "../images/invalid.jpg";
 
 import Hero1 from "../images/hero1.jpg";
 import Hero2 from "../images/her02.jpg";
@@ -35,8 +36,13 @@ import Emoji7 from "../images/emoji7.jpg";
 import Emoji8 from "../images/emoji8.jpg";
 import Emoji9 from "../images/emoji9.jpg";
 
-import { Link } from "react-router-dom";
-
+import {
+  Routes,
+  Route,
+  Link,
+  Switch,
+  BrowserRouter as Router,
+} from "react-router-dom";
 export default class Page4 extends Component {
   constructor(props) {
     super(props);
@@ -72,6 +78,9 @@ export default class Page4 extends Component {
       } else if (this.props.location.data.count == 90) {
         this.setState({ image: Fruit2 });
         this.setState({ name: "Banana" });
+      } else {
+        this.setState({ image: Invalid });
+        this.setState({ name: "not given because Invalid input" });
       }
     } else if (this.props.location.data.name == "hero") {
       console.log("hiii this is hero section", this.props.location.data.name);
@@ -93,8 +102,11 @@ export default class Page4 extends Component {
       } else if (this.props.location.data.count == 90) {
         this.setState({ image: Hero2 });
         this.setState({ name: "Pavan Kalyan" });
+      } else {
+        this.setState({ image: Invalid });
+        this.setState({ name: "not given because invalid input" });
       }
-    } else{
+    } else {
       console.log("hiii this is emoji section", this.props.location.data.name);
       if (this.props.location.data.count == 70) {
         this.setState({ image: Emoji1 });
@@ -114,6 +126,9 @@ export default class Page4 extends Component {
       } else if (this.props.location.data.count == 90) {
         this.setState({ image: Emoji9 });
         this.setState({ name: " Singing" });
+      } else {
+        this.setState({ image: Invalid });
+        this.setState({ name: "not given because invalid input" });
       }
     }
   };
@@ -131,14 +146,29 @@ export default class Page4 extends Component {
             </div> */}
 
             <center>
-              <h1 >
-                Hey dude! Your favourite {this.props.location.data.name} is  {" "}
-                {this.state.name}......
+              <h1>
+                Hey dude! Your favourite {this.props.location.data.name} is{" "}
+                {this.state.name}..
               </h1>
               <img
                 src={this.state.image}
-                style={{ height: "250px", width: "250px" }}
+                style={{
+                  height: "300px",
+                  width: "300px",
+                  padding: "50px",
+                  borderRadius: "50%",
+                }}
               ></img>
+
+              <Link
+                to={{
+                  pathname: "./",
+                }}
+              >
+                <div className="bottom">
+                  <button>Play Again</button>
+                </div>
+              </Link>
             </center>
           </div>
         </nav>
