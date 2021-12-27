@@ -1,0 +1,35 @@
+.theading {
+  padding-top: 50px;
+  /* display: inline; */
+}
+
+nav {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h {
+  font-size: 70px;
+  color: #473e3f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h2 {
+  color: #ef7125;
+  font-size: 30px;
+}
+
+.tphotos {
+  padding-left: 80px;
+  display: inline-flex;
+}
+.tpho {
+  flex-direction: column;
+  align-items: center;
+}
+.tpho img {
+  float: right;
+  height: 180px;
+  width: 180px;
+  padding: 30px;
+  border-radius: 50%;
+}
